@@ -470,8 +470,10 @@ form .payment-row {
 .Sucsess-section {
     display: grid;
     grid-template-columns: minmax(min-content, 500px);
+    grid-template-rows: 100px 100px 100px 100px;
     justify-content: center;
     margin: 20px;
+    height: 73vh;
 }
 
 .Sucsessh1, .order-placed, .Sucsess-order-delivery {
@@ -540,10 +542,6 @@ footer {
     .payment-container {
         justify-self: center;
         margin-bottom: 170px;
-    }
-    .Sucsess-section {
-        margin-bottom: 46vh;
-
     }
 
     .footer-li-container li {
