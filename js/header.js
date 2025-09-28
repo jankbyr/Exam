@@ -1,7 +1,7 @@
 let logo = document.querySelectorAll(".logo");
 for(let i = 0; i < logo.length; i++) {
         logo[i].addEventListener("click", function(){
-            location.href = "/index.html";
+            location.href = "../index.html";
     });
 }
 
