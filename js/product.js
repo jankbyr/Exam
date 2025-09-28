@@ -75,26 +75,6 @@ async function products() {
       localStorage.setItem("cart", JSON.stringify(cart));
     }
 
-    //   function addToCart(product) {
-    //   let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-    //   const existingItem = cart.find(item => item.id === product.id);
-
-    //   if (existingItem) {
-    //     existingItem.quantity += 1;
-    //   } else {
-    //     cart.push({
-    //       id: product.title,
-    //       title: product.title,
-    //       price: product.price,
-    //       image: product.image.url,
-    //       quantity: 1
-    //     });
-    //   }
-      
-    //   localStorage.setItem("cart", JSON.stringify(cart));
-    // }
-
     gotoCart.addEventListener("click", () => {
       location.href = "../pages/cart2.html";
       });

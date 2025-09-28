@@ -7,6 +7,7 @@ if (isCartPage) {
 function displayCart() {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
+
     const cartItemContainer = document.querySelector(".cart-items2");
     const grandTotalEl = document.querySelector(".grand-total");
 
@@ -16,14 +17,12 @@ function displayCart() {
         cartItemContainer.innerHTML = "<p>Your cart is empty.</p>";
         grandTotalEl.textContent = "$0"
         return;
+        
     }
 
     let grandtotal = 0;
 
     cart.forEach((item, index) => {
-        // const itemTotal = parseFloat(item.price.replace("$", "")) * item.quantity;
-        // grandtotal += itemTotal;
-
         const cartItem = document.createElement("div");
         cartItem.classList.add("cart-item2");
         cartItem.innerHTML = `
@@ -51,8 +50,6 @@ function displayCart() {
             location.href = "payment.html";
         });
     }
-   
-
 }
 
 function removeCartItem() {
@@ -66,7 +63,6 @@ function removeCartItem() {
             
         });
     });
-
 }
 
 
