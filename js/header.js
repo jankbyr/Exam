@@ -8,7 +8,7 @@ for(let i = 0; i < logo.length; i++) {
 let user = document.querySelectorAll(".user");
 for(let i = 0; i < user.length; i++) {
         user[i].addEventListener("click", function(){
-            location.href = "./pages/login.html";
+            location.href = "../pages/login.html";
     });
 }
 
