@@ -1,0 +1,551 @@
+body{
+    margin: 0;
+    font-family: Poppins;
+}
+
+button {
+    font-family: poppins;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #1D701B;
+    color: #fff;
+}
+
+/* Header */
+
+.header-border {
+    height: 92px;
+    background-color: rgb(228, 228, 228);
+    align-content: center;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+.header li {
+    list-style-type: none;
+    color: #0053EB;
+    align-self: center;
+}
+
+.user-cart{
+    display: flex;
+    color: #0053EB;
+}
+
+.cart {
+    padding-left: 5px;
+}
+
+.cart-icon{
+    position: relative;
+    align-content: center;
+}
+
+.cart-icon span {
+    background-color: #000000;
+    display: flex;
+    width: 22px;
+    height: 22px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    right: -20px;
+    
+}
+
+.logo {
+    width: 220px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Banner three newest added */
+
+.banner-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-content: center;
+    margin: 12px 0 68px 0;
+}
+
+.banner-carousel {
+    width: 402px;
+    height: 192px;
+    background-color: #94b9ff;
+    justify-items: center;
+    align-content: center;
+}
+
+.banner-content {
+    width: 274px;
+    height: 152px;
+    background-color: #0053EB;
+    border-radius: 10px;
+}
+
+/* Card Listings */
+.listing {
+    display: grid;
+    grid-template-columns: 167px 167px;
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    row-gap: 100px;
+    justify-content: center;
+    
+}
+
+.index-cardlist {
+    box-shadow: 5px 5px 5px #0052eb46;
+    border-radius: 5px;
+    width: 167px;
+    height: 270px;
+    margin: 8px;
+}
+
+.cardlist-title {
+    margin: 0;
+    padding: 0px;
+    justify-items: center;
+    font-size: 18px;
+}
+
+.cardlist-img {
+    width: 160px;
+    height: 130px;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 10px;
+}
+
+.cardlist-content {
+    width: 160px;
+    height: 100px;
+    padding: 0px;
+}
+
+.cardlist-anchor {
+    width: 115px;
+    height: 200px;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Single Product Page */
+
+.single-product-grid {
+    display: grid;
+    grid-template-columns: 350px;
+    grid-template-rows: 1fr;
+    column-gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+    height: 70vh;
+
+}
+
+.product-img {
+    box-shadow: 5px 5px 5px #0052eb46;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.product-container {
+    
+    justify-content: space-between;
+}
+
+.product-container button {
+    background-color: #0053EB;
+    color: #ffffff;
+    height: 60px;
+    width: 40%;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.product-tags {
+    background-color: #e9e9e9;
+    height: 30px;
+    
+    align-content: center;
+    color: #0053EB;
+}
+
+.product-price {
+    font-weight: bold;
+}
+
+.product-discountprice {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* Signup and Login page */
+
+.signup-login-section {
+    height: 74vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form-box {
+    justify-items: center;
+    background-color: #0052eb;
+    box-shadow: 0 0 20px;
+    width: min(500px, 100%);
+    border-radius: 10px;
+}
+
+.form-box input {
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: none;
+    
+}
+
+
+
+.signup-login-h1 {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.signup-login-btn {
+    margin: 10px 0 0 0;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.signup-login-btn:hover {
+    background-color: #8cff8b;
+    color: #000000;
+}
+
+.form-box p {
+    font-size: 15px;
+    margin: 25px 0 20px 0;
+    color: #fff;
+}
+
+.form-box p a{
+    font-size: 18px;
+    color: #8cff8b;
+    text-decoration: none;
+}
+
+.form-box p a:hover{
+    text-decoration: underline;
+}
+
+/* Payment Page */
+
+
+.payment-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    max-width: 700px;
+    
+}
+
+.payment-container form {
+    background-color: rgb(228, 228, 228);
+    width: 700px;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+form .payment-row {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.payment-row .colum {
+    flex:  1 1 250px;
+}
+
+.colum .payment-title {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.colum .input-box {
+    margin: 15px 0;
+}
+
+.input-box span {
+    display: block;
+    margin-bottom: 10px;
+    color:#000000;
+}
+
+.input-box input {
+    width: 75%;
+    padding: 10px 15px;
+    border: 1px solid;
+    border-radius: 5px;
+    font-size: 15px;
+    border-color: #0053EB;
+}
+
+.colum .flex {
+    display: flex;
+    gap: 15px;
+}
+
+.paynow-btn {
+    width: 700px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #0053EB;
+    color: #fff;
+    font-size: 18px;
+    
+}
+
+.input-box img {
+    height: 32px;
+    background-color: #fff;
+    border-radius: 5px;
+    
+}
+
+
+/* Shopping Cart */
+
+.cart-grid2 {
+    display: grid;
+    margin: 30px;
+    grid-template-columns: minmax(350px, 750px);
+    justify-content: center;
+    height: 72vh;
+}
+
+.cart-grid2 h1 {
+    font-size: 30px;
+    justify-self: center;
+}
+
+.cart-header {
+    display: flex;
+    padding: 10px 0;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-header span {
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+}
+
+.cart-header span:first-child {
+    flex: 2;
+    text-align: left;
+}
+
+.cart-item2 {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-item2 .product {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 2;
+}
+
+.cart-item2 img {
+    width: 80px;
+    margin-right: 15px;
+}
+
+.cart-item2 :is(.price, .quantity, .total-price) {
+    flex: 1;
+    text-align: center;
+}
+
+.cart-item2 .quantity input {
+    width: 25px;
+    pad: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    text-align: center;
+    margin: 20px;
+}
+
+.cart-item2 .remove {
+    background: transparent;
+    border: none;
+    flex: 1;
+}
+
+.cart-item2 .remove i {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+}
+
+.cart-total {
+    max-width: 400px;
+    margin: 50px 0 0 auto;
+}
+
+.cart-total h3 {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.cart-total p {
+    display: flex;
+    justify-content: space-between ;
+    
+}
+
+.cart-total p:last-of-type {
+    font-weight: bold;
+}
+
+.checkout{
+    background-color: #0053EB;
+    color: #fff;
+    border-radius: 10px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.cart-total .checkout {
+    display: block;
+    padding: 12px 30px;
+    margin: 30px 0 0 auto;
+}
+
+.go-to-cart:hover, .add-to-cart:hover {
+    background-color: #1D701B;
+}
+
+/* Sucsess page */
+
+.Sucsess-section {
+    display: grid;
+    grid-template-columns: minmax(min-content, 500px);
+    justify-content: center;
+    margin: 20px;
+}
+
+.Sucsessh1, .order-placed, .Sucsess-order-delivery {
+    text-align: center;
+}
+
+.Sucsess-checkimg {
+    width: 100px;
+    justify-self: center;
+}
+
+.Sucsess-btn-div {
+    justify-self: center;
+}
+
+.Sucsess-btn{
+    margin-top: 30px;
+    width: 200px;
+    height: 60px;
+    border-radius: 10px;
+    background-color: #0053EB;
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    align-content: center;
+    height: 120px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+    margin-top: 120px;
+    clear: both;
+}
+
+.footer-li-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr;
+}
+
+.footer-li-container li {
+    list-style-type: none;
+    color:#0053EB;
+    font-size: 14px;
+}
+
+@media (min-width: 1024px) {
+    .listing {
+        display: grid;
+        grid-template-columns: 167px 167px 167px 167px;
+        grid-template-rows: 1fr;
+        column-gap: 60px;
+        row-gap: 150px;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 700px) {
+    .payment-container {
+        justify-self: center;
+        margin-bottom: 170px;
+    }
+    .Sucsess-section {
+        margin-bottom: 46vh;
+
+    }
+
+    .footer-li-container li {
+    font-size: 18px;
+}
+}

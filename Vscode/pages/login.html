@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/Fontawsome/css/all.css">
+    <link href="/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/pictures/Logo.ico" type="image/x-icon">
+</head>
+<body>
+      <header class="header-border">
+        <section class="header">
+            <li class="search"><i class="fa-solid fa-magnifying-glass"></i></li>
+            <img class="logo" src="/pictures/Logo3.png" alt="Trend Beacon logo with green and blue text">
+            <div class="user-cart">
+                <li class="user"><i class="fa-solid fa-user"></i></li>
+            
+                <div class="cart-icon">
+                    <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                        <path fill-rule="evenodd" d="M14 7h-4v3a1 1 0 0 1-2 0V7H6a1 1 0 0 0-.997.923l-.917 11.924A2 2 0 0 0 6.08 22h11.84a2 2 0 0 0 1.994-2.153l-.917-11.924A1 1 0 0 0 18 7h-2v3a1 1 0 1 1-2 0V7Zm-2-3a2 2 0 0 0-2 2v1H8V6a4 4 0 0 1 8 0v1h-2V6a2 2 0 0 0-2-2Z" clip-rule="evenodd"/>
+                    </svg>
+                    <span>0</span>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <section class="signup-login-section">
+        <div id="error"></div>
+    
+        <form class="form-box" id="form-box">
+            <h1 class="signup-login-h1">Login</h1>
+            <div>
+                <label for="email">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8cff8b"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480v58q0 59-40.5 100.5T740-280q-35 0-66-15t-52-43q-29 29-65.5 43.5T480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480v58q0 26 17 44t43 18q26 0 43-18t17-44v-58q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93h200v80H480Zm0-280q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z"/></svg>
+                </label>
+                <input type="email" name="email" id="email" placeholder="Email adress" required>
+            </div>
+            <div>
+                <label for="password">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#8cff8b"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm240-200q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80Z"/></svg>
+                </label>
+                <input type="password" name="password" id="password" placeholder="Password" required minlength="6">
+            </div>
+            <button class="signup-login-btn" type="submit">Login</button>
+            <p>Don't have an account? <a href="signup.html">Creat an account here</a></p>
+        </form>
+        
+    </section>
+
+    <script src="/js/header.js"></script>
+
+    <footer>
+        <section class="footer-container">
+            <div class="footer-li-container">
+            <li>Tearm of service</li>
+            <li>Costumer Support</li>
+            <li>Information</li>
+        </div>
+        </section>
+    </footer>
+</body>
+</html>
